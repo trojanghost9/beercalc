@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/bootstrap.min.css') }}">
+	<img src="/static/images/beer.jpg" height="100px" width="320px" style="PADDING-LEFT: 20px">
+	<title>Calculator</title>
+</head>
+<body>
+	<form class="form-group" method=post>
+		<ul>
+            <h1>Calculator</h1>
+            <div class="row">
+                <div class="col-sm-5" style="background-color:#BFEFFF;">
+                <h3>Some items</h3>
+                    <dl>
+                        <dt>Skill Level:</dt>
+                        <dd>- What the what?</dd>
+                        {{ form.level_selector }}
+                    </dl>
+                    <dl>
+                        <dt>Discovery:</dt>
+                        <dd>- What the what?</dd>
+                        {{ form.discovery_selector }}
+                    </dl>
+                    <dl>
+                        <dt>Ease:</dt>
+                        <dd>- What the what?</dd>
+                        {{ form.ease_selector }}
+                    </dl>
+                    <dl>
+                    <dt>Awareness</dt>
+                    <dd>- What the what?</dd>
+                    {{ form.awareness_selector }}
+                    </dl>
+                </div>
+                <div class="col-sm-5" style="background-color:#BFEFFF;">
+                <h3>Some more items</h3>
+                    <dl>
+                        <dt><a target="_blank" href="http://www.bjcp.org/docs/2015_Guidelines_Beer.pdf">Info:</a></dt>
+                        <dd>- What the what?</dd>
+                        {{ form.info_selector }}
+                    </dl>
+                    <dl>
+                        <dt>Availability:</dt>
+                        <dd>- What the what?</dd>
+                        {{ form.availability_selector }}
+                    </dl>
+                    <dl>
+                        <dt>Brand:</dt>
+                        <dd>- What the what?</dd>
+                        {{ form.brand_selector }}
+                    </dl>
+                    <dl>
+                        <dt>Privacy:</dt>
+                        <dd>- What the what?</dd>
+                        {{ form.privacy_selector }}
+                    </dl>
+                </div>
+            </div>
+            <br>
+            {{ form.submit(class="btn btn-primary") }}
+		</ul>
+	</form>
+
+</body>
+</html>
