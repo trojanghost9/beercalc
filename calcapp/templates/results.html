@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/bootstrap.min.css') }}">
-	<title>Calculator</title>
+	<title>Beer Rating Results</title>
 </head>
-<body>
+<body class="container" style="background-image: url('/static/images/concrete.jpg');">
 
-
-<H2 style="PADDING-LEFT: 20px">Rating:</H2>
-<H3 style="PADDING-LEFT: 20px">{{ rating }}</H3>
-<p style="PADDING-LEFT: 20px">{{ url }}</p>
+<h1 style="color:#FFFFFF;">Beer Rating Calculator</h1>
+<a target="_blank" href="http://www.bjcp.org/docs/2015_Guidelines_Beer.pdf">
+    <img src="/static/images/Homer-Beer-icon.png" height="65px" width="80px">
+</a>
+<H2 style="PADDING-LEFT: 20px; color:#FFFFFF;">Rating:</H2>
+<H3 style="PADDING-LEFT: 20px; color:#FFFFFF;">{{ rating }}</H3>
+<p style="PADDING-LEFT: 20px; color:#FFFFFF;">{{ url }}</p>
 
 
 </body>
