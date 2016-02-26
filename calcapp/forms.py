@@ -4,14 +4,14 @@ from wtforms import SubmitField, SelectField
 
 class BeerForm(Form):
     # choice definitions
-    appearance = [(1, 'Not Even Close'), (3.25, 'Major Faults'), (5.5, 'Slight Faults'), (7.75, 'No Faults'), (10, 'Perfect')]
-    aroma = [(1, 'Not Even Close'), (3.25, 'Major Faults'), (5.5, 'Slight Faults'), (7.75, 'No Faults'), (10, 'Perfect')]
-    flavor = [(1, 'Not Even Close'), (3.25, 'Major Faults'), (5.5, 'Slight Faults'), (7.75, 'No Faults'), (10, 'Perfect')]
-    mouthfeel = [(1, 'Not Even Close'), (3.25, 'Major Faults'), (5.5, 'Slight Faults'), (7.75, 'No Faults'), (10, 'Perfect')]
-    myappearance = [(1, 'Two Bagger'), (3.25, 'Keep Drinking'), (5.5, 'Plain Jane'), (7.75, 'Local News Anchor'), (10, 'My Wife')]
-    myaroma = [(1, 'Burning Diapers'), (3.25, 'Stings The Nostrils'), (5.5, 'Smells Like Beer'), (7.75, 'Delightful'), (10, 'Euphoria')]
-    myflavor = [(1, 'Infected'), (3.25, 'No Me Gusta'), (5.5, 'Me Gusta'), (7.75, 'Delicious'), (10, 'Nectar Of The Gods')]
-    replay = [(1, 'Did Not Finish It'), (3.25, 'Once Was Enough'), (5.5, 'Solid Go To'), (7.75, 'Buy In Bulk'), (10, 'I Would Drink Only This')]
+    appearance = [(1, 'Not Even Close'), (3.0, 'Major Faults'), (5.0, 'Slight Faults'), (7.0, 'No Faults'), (9, 'Perfect')]
+    aroma = [(1, 'Not Even Close'), (3.0, 'Major Faults'), (5.0, 'Slight Faults'), (7.0, 'No Faults'), (9, 'Perfect')]
+    flavor = [(1, 'Not Even Close'), (3.0, 'Major Faults'), (5.0, 'Slight Faults'), (7.0, 'No Faults'), (9, 'Perfect')]
+    mouthfeel = [(1, 'Not Even Close'), (3.0, 'Major Faults'), (5.0, 'Slight Faults'), (7.0, 'No Faults'), (9, 'Perfect')]
+    myappearance = [(1, 'Two Bagger'), (3.0, 'Keep Drinking'), (5.0, 'Plain Jane'), (7.0, 'Local News Anchor'), (9, 'My Wife')]
+    myaroma = [(1, 'Burning Diapers'), (3.0, 'Stings The Nostrils'), (5.0, 'Smells Like Beer'), (7.0, 'Delightful'), (9, 'Euphoria')]
+    myflavor = [(1, 'Infected'), (3.0, 'No Me Gusta'), (5.0, 'Me Gusta'), (7.0, 'Delicious'), (9, 'Nectar Of The Gods')]
+    replay = [(1, 'Did Not Finish It'), (3.0, 'Once Was Enough'), (5.0, 'Solid Go To'), (7.0, 'Buy In Bulk'), (9, 'I Would Drink Only This')]
 
     # selection drop downs
     appearance_selector = SelectField("Appearance", choices=appearance)

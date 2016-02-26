@@ -34,13 +34,13 @@ def home():
         my_factors = (myappearance + myaroma + myflavor + replay) / 4.0
         score = (style_factors + my_factors) / 2.0
 
-        if score < 2.0:
+        if score < 1.8:
             rating = "Poor it out!"
-        elif score < 4.0:
+        elif score < 3.6:
             rating = "Meh"
-        elif score < 6.0:
+        elif score < 5.4:
             rating = "Good"
-        elif score < 8.0:
+        elif score < 7.2:
             rating = "Yum!"
         else:
             rating = "Desert island beer!!!"
@@ -67,13 +67,13 @@ def home():
             my_factors = (myappearance + myaroma + myflavor + replay) / 4.0
             score = (style_factors + my_factors) / 2.0
 
-            if score < 2.0:
+            if score < 1.8:
                 rating = "Poor it out!"
-            elif score < 4.0:
+            elif score < 3.6:
                 rating = "Meh"
-            elif score < 6.0:
+            elif score < 5.4:
                 rating = "Good"
-            elif score < 8.0:
+            elif score < 7.2:
                 rating = "Yum!"
             else:
                 rating = "Desert island beer!!!"
