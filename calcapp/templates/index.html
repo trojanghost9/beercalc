@@ -4,7 +4,7 @@
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/bootstrap.min.css') }}">
 	<title>Beer Rating Calculator</title>
 </head>
-<body class="container" style="background-image: url('/static/images/concrete.jpg');">
+<body class="container" style="background-image: url('/static/images/beerback.jpg');">
 	<form class="form-group" method=post>
         <h1 style="color:#FFFFFF;">Beer Rating Calculator</h1>
         <a target="_blank" href="http://www.bjcp.org/docs/2015_Guidelines_Beer.pdf">
@@ -63,6 +63,10 @@
             {{ form.submit(class="btn btn-primary") }}
 		</ul>
 	</form>
+<H2 style="PADDING-LEFT: 20px; color:#FFFFFF;">Rating:</H2>
+<H3 style="PADDING-LEFT: 20px; color:#FFFFFF;">{{ rating }}</H3>
+<p class="small" style="PADDING-LEFT: 20px; color:#FFFFFF;">{{ url }}</p>
+
 
 </body>
 </html>
