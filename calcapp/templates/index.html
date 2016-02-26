@@ -6,55 +6,55 @@
 </head>
 <body class="container" style="background-image: url('/static/images/beerback.jpg');">
 	<form class="form-group" method=post>
-        <h1 style="color:#FFFFFF;">Beer Rating Calculator</h1>
+        <h1 style="color:#B3FFFF;">Beer Rating Calculator</h1>
         <a target="_blank" href="http://www.bjcp.org/docs/2015_Guidelines_Beer.pdf">
             <img src="/static/images/Homer-Beer-icon.png" height="65px" width="80px">
         </a>
 		<ul>
             <div class="row">
-                <div class="col-sm-5" style="background-color:#BFEFFF;">
-                <h3>Style Items</h3>
+                <div class="col-sm-5" style="background-color:transparent;">
+                <h3 style="color:#B3FFFF;">Style Items</h3>
                     <dl>
-                        <dt>Appearance:</dt>
-                        <dd>- Does the beer match color, clarity, lacing?</dd>
+                        <dt style="color:#B3FFFF;">Appearance:</dt>
+                        <dd style="color:#B3FFFF;">- Does the beer match color, clarity, lacing?</dd>
                         {{ form.appearance_selector }}
                     </dl>
                     <dl>
-                        <dt>Aroma:</dt>
-                        <dd>- Does the beer match the hop/malt aroma?</dd>
+                        <dt style="color:#B3FFFF;">Aroma:</dt>
+                        <dd style="color:#B3FFFF;">- Does the beer match the hop/malt aroma?</dd>
                         {{ form.aroma_selector }}
                     </dl>
                     <dl>
-                        <dt>Flavor:</dt>
-                        <dd>- Does the beer taste like the style?</dd>
+                        <dt style="color:#B3FFFF;">Flavor:</dt>
+                        <dd style="color:#B3FFFF;">- Does the beer taste like the style?</dd>
                         {{ form.flavor_selector }}
                     </dl>
                     <dl>
-                    <dt>Mouthfeel:</dt>
-                    <dd>- Does the beer match the mouthfeel of the style?</dd>
+                    <dt style="color:#B3FFFF;">Mouthfeel:</dt>
+                    <dd style="color:#B3FFFF;">- Does the beer match the mouthfeel of the style?</dd>
                     {{ form.mouthfeel_selector }}
                     </dl>
                 </div>
-                <div class="col-sm-5" style="background-color:#BFEFFF;">
-                <h3>Drinkability Items</h3>
+                <div class="col-sm-5" style="background-color:transparent;">
+                <h3 style="color:#B3FFFF;">Drinkability Items</h3>
                     <dl>
-                        <dt>Appearance:</dt>
-                        <dd>- Does I like the appearance?</dd>
+                        <dt style="color:#B3FFFF;">Appearance:</dt>
+                        <dd style="color:#B3FFFF;">- Does I like the appearance?</dd>
                         {{ form.myappearance_selector }}
                     </dl>
                     <dl>
-                        <dt>Aroma:</dt>
-                        <dd>- Do I like the aroma?</dd>
+                        <dt style="color:#B3FFFF;">Aroma:</dt>
+                        <dd style="color:#B3FFFF;">- Do I like the aroma?</dd>
                         {{ form.myaroma_selector }}
                     </dl>
                     <dl>
-                        <dt>Flavor:</dt>
-                        <dd>- How much do I like the flavor?</dd>
+                        <dt style="color:#B3FFFF;">Flavor:</dt>
+                        <dd style="color:#B3FFFF;">- How much do I like the flavor?</dd>
                         {{ form.myflavor_selector }}
                     </dl>
                     <dl>
-                        <dt>Replay value:</dt>
-                        <dd>- How likely am I to drink this again?</dd>
+                        <dt style="color:#B3FFFF;">Replay value:</dt>
+                        <dd style="color:#B3FFFF;">- How likely am I to drink this again?</dd>
                         {{ form.replay_selector }}
                     </dl>
                 </div>
@@ -63,9 +63,9 @@
             {{ form.submit(class="btn btn-primary") }}
 		</ul>
 	</form>
-<H2 style="PADDING-LEFT: 20px; color:#FFFFFF;">Rating:</H2>
-<H3 style="PADDING-LEFT: 20px; color:#FFFFFF;">{{ rating }}</H3>
-<p class="small" style="PADDING-LEFT: 20px; color:#FFFFFF;">{{ url }}</p>
+<H2 style="PADDING-LEFT: 20px; color:#B3FFFF;">Rating:</H2>
+<H3 style="PADDING-LEFT: 20px; color:#B3FFFF;">{{ rating }}</H3>
+<p class="small" style="PADDING-LEFT: 20px; color:#B3FFFF;">{{ url }}</p>
 
 
 </body>
