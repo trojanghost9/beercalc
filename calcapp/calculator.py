@@ -1,9 +1,17 @@
 from flask import Flask, render_template, request
 from settings import secret_key
 from forms import BeerForm
+from flask_wtf.csrf import CsrfProtect
 
 app = Flask(__name__)
 app.secret_key = secret_key
+CsrfProtect(app)
+
+
+@app.after_request
+def frame_buster(response):
+    response.headers['X-Frame-Options'] = 'DENY'
+    return response
 
 
 @app.route('/', methods=['GET', 'POST'])
