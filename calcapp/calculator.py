@@ -28,14 +28,14 @@ def home():
 
     if request.method == 'POST':
         # do the calculations and return the information on the results page
-        appearance = float(form.appearance_selector.data)
-        aroma = float(form.aroma_selector.data)
-        flavor = float(form.flavor_selector.data)
-        mouthfeel = float(form.mouthfeel_selector.data)
-        myappearance = float(form.myappearance_selector.data)
-        myaroma = float(form.myaroma_selector.data)
-        myflavor = float(form.myflavor_selector.data)
-        replay = float(form.replay_selector.data)
+        appearance = int(form.appearance_selector.data)
+        aroma = int(form.aroma_selector.data)
+        flavor = int(form.flavor_selector.data)
+        mouthfeel = int(form.mouthfeel_selector.data)
+        myappearance = int(form.myappearance_selector.data)
+        myaroma = int(form.myaroma_selector.data)
+        myflavor = int(form.myflavor_selector.data)
+        replay = int(form.replay_selector.data)
 
         # calculate score
         style_factors = (appearance + aroma + flavor + mouthfeel) / 4.0
@@ -61,14 +61,14 @@ def home():
         # if GET then check if query string parameters to calculate
     else:
         try:
-            appearance = float(request.args.get('appearance'))
-            aroma = float(request.args.get('aroma'))
-            flavor = float(request.args.get('flavor'))
-            mouthfeel = float(request.args.get('mouthfeel'))
-            myappearance = float(request.args.get('myappearance'))
-            myaroma = float(request.args.get('myaroma'))
-            myflavor = float(request.args.get('myflavor'))
-            replay = float(request.args.get('replay'))
+            appearance = int(request.args.get('appearance'))
+            aroma = int(request.args.get('aroma'))
+            flavor = int(request.args.get('flavor'))
+            mouthfeel = int(request.args.get('mouthfeel'))
+            myappearance = int(request.args.get('myappearance'))
+            myaroma = int(request.args.get('myaroma'))
+            myflavor = int(request.args.get('myflavor'))
+            replay = int(request.args.get('replay'))
 
             # calculate score
             style_factors = (appearance + aroma + flavor + mouthfeel) / 4.0
